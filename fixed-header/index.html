@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fixed Header</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+
+<body>
+    <header class="fixed-top"><span class="title">CSS Postition</span>
+    </header>
+    <main class="content-container">
+        <section>
+            <article class="article">
+                <h1>Examples</h1>
+                <ul>
+                    <li><a href="#static">static (default)</a></li>
+                    <li><a href="#relative">relative</a></li>
+                    <li><a href="#fixed">fixed</a></li>
+                    <li><a href="#absolute">absolute</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </article>
+            <article class="article">
+                <h1><a name="static">position static</a></h1>
+                <div class="notes">
+                    Normal positioning in the order of the document. top, right, bottom and left are ignored
+                    <br/>Normal positioning means no overlapping
+                </div>
+                <div class="example-container">
+                    <div class="example" style="position: static;">static
+                        <div>(right: 10px; top: 10px;)</div>
+                    </div>
+                </div>
+            </article>
+            <article class="article">
+                <h1><a name="relative">position relative</a></h1>
+                <div class="notes">
+                    Allows the use of top, right, bottom, and left to position the element relative to it's normal position
+                </div>
+                <div class="example-container">
+                    <div class="example" style="position: relative;">relative
+                        <div>(right: 10px; top: 10px;)</div>
+                    </div>
+                </div>
+            </article>
+            <article class="article">
+                <h1><a name="fixed">position fixed</a></h1>
+                <div class="notes">
+                    Fixed Relative to the viewport and doesn't scroll Allows the use of top, right, bottom, and left to position the element
+                </div>
+                <div class="example-container">
+                    <div class="example" style="position: fixed;">fixed
+                        <div>(right: 10px; top: 10px;)</div>
+                    </div>
+                    Look up in the top right of the page :)
+                </div>
+            </article>
+            <article class="article">
+                <h1><a name="absolute">position absolute</a></h1>
+                <div class="notes">
+                    Like fixed except relative to the parent which is anything but 'static' position.<br/>In this case the grey container has position: relative;
+                </div>
+                <div class="example-container">
+                    <div class="example" style="position: absolute;">absolute
+                        <div>(right: 10px; top: 10px;)</div>
+                    </div>
+                </div>
+            </article>
+            <article>
+            	<h1><a name="resources">Resources</a></h1>
+            	<div class="notes">
+            		<ul>
+            		<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index">Understanding CSS z-index | MDN</a></li>
+            		</ul>
+            	</div>
+            </article>
+        </section>
+    </main>
+    <script type="text/javascript" src="./layout.js"></script>
+</body>
+
+</html>
