@@ -20,20 +20,20 @@ h1,h2,h3 {
    left: 0;
    right: 0;
    position: fixed;
-   height: 4em;
+   height: 3em;
    background-color: #EEB;
    opacity: 0.95;
+   z-index: 1;
 }
 
 header .title {
-   font-size: 2em;
-   line-height: 2em;
-   z-index: 1;
+   font-size: 1.5em;
+   line-height: 1.5em;
 }
 
 .content-container{
 	width: 80%;
-    margin: 4em auto 0px auto;
+    margin: 3em auto 0px auto;
 }
 
 .article{
@@ -56,15 +56,13 @@ header .title {
 
 .example{
 	width: 200px;
-	height: 80px;
+	height: 35px;
 	border: 1px solid #333;
 	background-color: #CFC;
 	text-align: center;
 	font-size: 0.7em;
 	right: 10px; 
-	top: 10px;
+	top: 20px;
+	padding: 45px 0 0 0;
 }
-
-
-
 
